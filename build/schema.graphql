@@ -1,0 +1,33 @@
+type TransferEntity @entity {
+  id: ID!
+  contract: Bytes!
+  transactionFrom:Bytes
+  transactionTo:Bytes
+  transferFrom: Bytes!
+  transferTo: Bytes!
+  value:BigDecimal!
+  hash:Bytes!
+  height: BigInt!
+  logIndex:BigInt!
+  timestamp: BigInt!
+}
+
+type AddrRelation @entity {
+  id: ID!
+  from: Bytes!
+  to: Bytes!
+  count: BigInt!
+  updateTime: BigInt!
+  createTime: BigInt!
+}
+
+type AddrManager @entity {
+  id: ID!
+  firstTransferTime: BigInt!
+}
+
+type Token @entity {
+  id: ID!
+  decimals: BigInt!
+}
+
