@@ -7,10 +7,10 @@ dataSources:
     network: mainnet
     source:
       abi: ERC20
-      startBlock: 10282501
+      startBlock: 17214835
     mapping:
       kind: ethereum/events
-      apiVersion: 0.0.4
+      apiVersion: 0.0.5
       language: wasm/assemblyscript
       entities:
         - Transfer
